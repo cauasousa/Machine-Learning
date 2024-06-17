@@ -3,7 +3,6 @@ import pandas as pd
 
 df = pd.read_csv('path_Cancer', sep=',', encoding='iso-8859-1')
 
-
 # Transformando as classes strings em variáveis categórica ordinais
 df2 = pd.DataFrame.copy(df)
 
@@ -23,23 +22,15 @@ from sklearn.preprocessing import StandardScaler
 
 previsores_esc = StandardScaler().fit_transform(previsores)
 
-# ###############################################################
-# Resumo
-# Alvo é variával que se pretende atingir
-# previsores são o conjunto de variáveis previsoras com varipaveis categóricas transformadas em numéricas, sem escalonamento.
-# previsores_esc são o conjunto de variáveis previsoras com varipaveis categóricas transformadas em numéricas, com escalonamento.
-# ###############################################################
-
 
 # BASE DE TREINO E TESTE
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 label_encoder = LabelEncoder()
 
-# previsores_esc = label_encoder.fit_transform(previsores_esc)
-# print(alvo)
+
 alvo = label_encoder.fit_transform(alvo)
-# print(alvo)
+
 
 x_treino, x_teste, y_treino, y_teste = train_test_split(previsores_esc, alvo, test_size = 0.4, random_state = 0)
 
