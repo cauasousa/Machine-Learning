@@ -40,15 +40,12 @@ label_encoder = LabelEncoder()
 
 
 ############## CRIAÇÃO DO ALGORITMO ##############
-from sklearn.neural_network import MLPClassifier
-
-redes = MLPClassifier(hidden_layer_sizes=(22, 16), activation='tanh', solver='adam', 
-                      max_iter =100,tol=0.001, random_state = 3, verbose = False)
-
+from sklearn.naive_bayes import GaussianNB
+naive = GaussianNB()
             
-redes.fit(x_treino, y_treino)
+naive.fit(x_treino, y_treino)
 
-previsoes = redes.predict(x_teste)
+previsoes = naive.predict(x_teste)
 
 print("\n\t........... Resultados .........\n")
 
@@ -64,7 +61,7 @@ print(classification_report(y_teste, previsoes))
 
 print("\n\t........... Analisando os dados de treino (Overffitting) ...........\n")
 
-previsoes_treino = redes.predict(x_treino)
+previsoes_treino = naive.predict(x_treino)
 
 print("%.2f%%" % (accuracy_score(y_treino, previsoes_treino) * 100.00))
 
@@ -78,8 +75,7 @@ from sklearn.model_selection import cross_val_score
 
 kfold = KFold(n_splits = 20, shuffle=True, random_state = 3)
 
-modelo = MLPClassifier( hidden_layer_sizes=(22, 16), activation='tanh', solver='adam', 
-                        max_iter =100, tol=0.001, random_state = 3, verbose = False)
+modelo = GaussianNB()
 
 resultado = cross_val_score(modelo, previsores_esc, alvo, cv = kfold)
 print("Acurácia Média: %.2f%%" % (resultado.mean() * 100.0))
