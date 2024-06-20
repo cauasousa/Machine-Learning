@@ -12,6 +12,7 @@ Variável previsores_esc são o conjunto de variáveis previsoras com varipaveis
 
 
 
+APRENDIZAGEM BASEADA EM INSTÂNCIAS (KNN)- [KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html) - 96.05% de acerto com os dados do teste; 97.07% de acerto com os dados do treino. 96.27% Validação Cruzada.
 
 [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) - 98.68% de acerto com os dados do teste; 98.83% de acerto com os dados do treino. 97.56% Validação Cruzada.
 
