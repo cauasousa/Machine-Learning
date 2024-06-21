@@ -12,6 +12,8 @@ Variável previsores_esc são o conjunto de variáveis previsoras com varipaveis
 
 
 
+RANDOM FOREST - [RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) - 94.30% de acerto com os dados do teste; 95.89% de acerto com os dados do treino. 94.01% Validação Cruzada.
+
 ÁRVORE DE DECISÃO - [DecisionTreeClassifier](https://scikit-learn.org/stable/modules/tree.html) - 93.86% de acerto com os dados do teste; 97.36% de acerto com os dados do treino. 93.12% Validação Cruzada.
 
 APRENDIZAGEM BASEADA EM INSTÂNCIAS (KNN)- [KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html) - 96.05% de acerto com os dados do teste; 97.07% de acerto com os dados do treino. 96.27% Validação Cruzada.
