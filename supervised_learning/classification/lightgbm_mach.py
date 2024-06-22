@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv('C:\\Users\\CauaS\\programacao\\Python-Development\\machine-learning\\data_cancer2.csv', sep=',', encoding='iso-8859-1')
+df = pd.read_csv('path_Cancer', sep=',', encoding='iso-8859-1')
 
 # Transformando as classes strings em variáveis categórica ordinais
 df2 = pd.DataFrame.copy(df)
