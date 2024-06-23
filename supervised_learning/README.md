@@ -11,6 +11,7 @@ Variável previsores são o conjunto de variáveis previsoras com varipaveis cat
 Variável previsores_esc são o conjunto de variáveis previsoras com varipaveis categóricas transformadas em numéricas, com escalonamento.
 
 
+[CATBOOST](https://catboost.ai/en/docs/) - 97.37% de acerto com os dados do teste; 98.83% de acerto com os dados do treino. 96.29% Validação Cruzada.
 
 [LIGHTGBM](https://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.train.html) - 97.37% de acerto com os dados do teste; 98.83% de acerto com os dados do treino. 95.41% Validação Cruzada.
 
@@ -22,7 +23,7 @@ APRENDIZAGEM BASEADA EM INSTÂNCIAS (KNN)- [KNeighborsClassifier](https://scikit
 
 [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) - 98.68% de acerto com os dados do teste; 98.83% de acerto com os dados do treino. 97.56% Validação Cruzada.
 
-[SVM](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) - 97.81% de acerto com os dados do teste; 98.24% de acerto com os dados do treino. 97.70% Validação Cruzada.
+[SVM](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) - 97.81% de acerto com os dados do teste; 98.24% de acerto com os dados do treino. 97.53% Validação Cruzada.
 
 Naive Bayes - [GaussianNB](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html) - 90.79% de acerto com os dados do teste; 94.13% de acerto com os dados do treino. 93.12% Validação Cruzada.
 
